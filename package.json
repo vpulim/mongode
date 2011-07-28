@@ -1,0 +1,19 @@
+{
+    "name": "mongode",
+    "version": "0.0.1",
+    "description": "A thin wrapper around node-mongodb-native with a simpler API",
+    "engines": { "node": ">=0.4.0" },
+    "author": "Vinay Pulim <v@pulim.com>",
+    "dependencies": {
+        "node-mongodb-native": ">= 0.9.6",
+     },
+    "repository" : { 
+        "type":"git", 
+        "url":"https://github.com/milewise/mongode.git" },
+    "main": "./index.js",
+    "directories": { "lib": "./lib" },
+    "keywords": ["mongodb", "mongo", "driver"],
+    "licenses": [{ 
+        "type" :  "MIT License",
+        "url" :   "http://www.opensource.org/licenses/mit-license.php" }]
+}
