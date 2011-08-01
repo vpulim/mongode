@@ -3,6 +3,11 @@ Introduction
 
 Mongode is a very thin (~200 lines of code) wrapper around the [node-mongodb-native](https://github.com/christkv/node-mongodb-native) driver. It's main purpose is to reduce the amount of function call nesting that is usually needed with the native driver. It does this by buffering commands until the appropriate objects are available.
 
+Installation
+============
+
+npm install mongode
+
 Examples
 ========
 
