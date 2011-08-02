@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Mongode is a very thin (~200 lines of code) wrapper around the [node-mongodb-native](https://github.com/christkv/node-mongodb-native) driver. It's main purpose is to reduce the amount of function call nesting that is usually needed with the native driver. It does this by buffering commands until the appropriate objects are available.  
+Mongode is a very thin (~200 lines of code) wrapper around the [node-mongodb-native](https://github.com/christkv/node-mongodb-native) driver. It buffers collection operations until a connection is made, thus removing one level of callback nesting.  It also binds collections to the database object as a key on the object making code easier to read. See below for examples of how to insert a document using mongode and how to bind collections.
 
 Installation
 ============
