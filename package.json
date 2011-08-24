@@ -1,6 +1,6 @@
 {
     "name":"mongode",
-    "version":"0.0.4",
+    "version":"0.0.5",
     "description":"A thin wrapper around node-mongodb-native with a simpler API",
     "engines":{"node":">=0.4.0"},
     "author":"Vinay Pulim <v@pulim.com>",
