@@ -1,10 +1,10 @@
 {
     "name":"mongode",
-    "version":"0.1.1",
+    "version":"0.1.2",
     "description":"A thin wrapper around node-mongodb-native with a simpler API",
     "engines":{"node":">=0.4.0"},
     "author":"Vinay Pulim <v@pulim.com>",
-    "dependencies":{"mongodb":"0.9.7-3"},
+    "dependencies":{"mongodb":"0.9.7-3-5"},
     "repository":{"type":"git","url":"https://github.com/milewise/mongode.git"},
     "main":"./index.js",
     "directories":{"lib":"./lib"},
