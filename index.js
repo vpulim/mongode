@@ -1,11 +1,14 @@
 var db = require('./lib/db.js');
 
+var nameCache = {};
+
 function connect(name, serverURIs, options) {
-    if (!exports[name]) {
-        exports[name] = new db.Database(name, serverURIs, options);
+    if (!nameCache[name]) {
+        var newDb = new db.Database(name, serverURIs, options);
+        exports[newDb.name] = nameCache[name] = newDb;
     }
 
-    return exports[name];
+    return nameCache[name];
 }
 
 exports.connect = connect;

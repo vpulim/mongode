@@ -29,7 +29,7 @@ node-mongodb-native:
 mongode:
 
     var mongode = require('mongode');
-    var test = mongode.connect('test', '127.0.0.1');
+    var test = mongode.connect('mongo://127.0.0.1/test');
     var collection = test.collection('test_collection');
     collection.insert({hello: 'world'}, {safe:true}, function(err, objects) {
       if (err) console.warn(err.message);
@@ -41,7 +41,7 @@ Binding
 You can bind databases and collections by name:
 
     var mongode = require('mongode');
-    mongode.connect('test', '127.0.0.1');
+    mongode.connect('mongo://127.0.0.1/test');
 
     var test = mongode.test;
     test.collection('foo');
