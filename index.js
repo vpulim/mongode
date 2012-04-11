@@ -14,3 +14,4 @@ function connect(name, serverURIs, options) {
 exports.connect = connect;
 exports.Database = db.Database;
 exports.ObjectID = db.ObjectID;
+exports.BSON = db.BSON;
