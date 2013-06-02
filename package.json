@@ -4,7 +4,7 @@
     "description":"A thin wrapper around node-mongodb-native with a simpler API",
     "engines":{"node":">=0.6.0"},
     "author":"Vinay Pulim <v@pulim.com>",
-    "dependencies":{"mongodb":"0.9.9-3"},
+    "dependencies":{"mongodb":">=0.9.9-3"},
     "repository":{"type":"git","url":"https://github.com/milewise/mongode.git"},
     "main":"./index.js",
     "directories":{"lib":"./lib"},
